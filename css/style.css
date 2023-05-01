@@ -1031,7 +1031,7 @@ nav a:hover + .line{
 		min-height: 670px;
 	}
 	nav ul, nav ul:active ul {
-		display: block;
+		display: none;
 		background-color: #f38c8f;
 		text-align: center;
 		padding: 0px;
