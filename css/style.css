@@ -706,6 +706,7 @@ nav a:hover + .line{
 	place-content: center;
 	place-items: center;
 	overflow: hidden;
+	height: 600px;
   }
   
   .portrait-picture::before {
@@ -718,12 +719,12 @@ nav a:hover + .line{
 	transition: all 0.2s linear;
   }
   .portrait-picture::after {
-	content: '';
-	position: absolute;
-	background: url('../images/12.jpg') center center;
-	inset: 10px;
-	border-radius: 10px;
-  }    
+    content: '';
+    position: absolute;
+    background: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/6c7622170183493.6459d53e27cb9.jpg) center bottom;
+    inset: 10px;
+    border-radius: 10px;
+}
 /* End */
 .emailinfo span, .phoneinfo span {
     color: white;
