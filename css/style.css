@@ -59,10 +59,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .phone, .email {
 	font-size: 18px;
-	background-color: #F38C8F;
-	border-radius: 100px;
+	background-color: var(--dark);
+	/* border-radius: 100px; */
 	padding: 10px 13px;
 	margin-right: 10px;
+}
+.details a {
+    color: var(--black) !important;
+}
+.details a:hover {
+    color: var(--gray) !important;
 }
 .arrow {
   margin: -5px 10px;
@@ -215,21 +221,21 @@ nav a:hover + .line{
 	width: 250px;
 	text-align: center;
 	padding: 15px 30px;
-	background-color: #F38C8F;
-	color: white;
+	background-color: var(--white);
+	color: var(--black);
 	text-decoration: none;
 	font-size: 16px;
 	transition: 0.32s ease;
 	text-transform: uppercase;
 	font-weight: 500;
 	letter-spacing: 1px;
-	border-radius: 100px;
+	/* border-radius: 100px; */
 	margin: 20px 0px;
 }
 .btn-banner:hover {
-	color:#fff;
+	color:var(--white);
 	transition: 0.32s ease;
-	background-color: #2D6073;
+	background-color: var(--dark);
 }
 .btn-one {
 	width: 180px;
@@ -513,29 +519,35 @@ nav a:hover + .line{
 	text-align: center;
 	line-height: 1.2;
 	font-size: 22px;
-	color:#aaa;
+	color:var(--gray);
 	font-weight: normal;
 }
 .gridflex h2 {
-	text-align: left;
 	line-height: 1.2;
 	font-size: 25px;
-	color:#aaa;
-	display: flex;
+	color:var(--white);
 }
 .gridflex img {
-    margin-top: -10px;
-    margin-right: 10px;
+    width: 100px;
+    height: auto;
+    margin-top: -50px;
+    margin-bottom: -20px;
 }
 .service1 .service2 .service3 {
 	width: 100%;
 }
+.service1-box:nth-child(2) {
+	background-color: var(--black);
+}
 /* CARDS */
 .service1-box {
-	background-color: #fff;
-	border-radius: 8px;
+	text-align: center;
+	color: var(--white);
+	background-color: var(--dark);
+	/* border-radius: 8px; */
     box-shadow: 0px 0px 10px #bebebe87, -5px -5px 10px #ffffff;
 	padding: 20px;
+	/* border: 5px solid var(--black); */
    }
    
    .tools {
@@ -610,7 +622,7 @@ nav a:hover + .line{
 	object-fit: cover;
 	overflow: hidden;
 	cursor: pointer;
-	border-radius: 5px;
+	/* border-radius: 5px; */
 	transition: all 0.3s;
 }
 .banner2 img:hover {
@@ -621,7 +633,7 @@ nav a:hover + .line{
 	font-weight: bold;
 	letter-spacing: 2px;
 	font-size: 40px;
-	color: #2D6073;
+	color: var(--black);
 }
 .project .Gridproj {
     padding: 100px 0px 20px 0px;
@@ -630,7 +642,7 @@ nav a:hover + .line{
 	text-align: center;
 	line-height: 1.2;
 	font-size: 20px;
-	color:#aaa;
+	color:var(--gray);
 }
 .proj1, .proj2, .proj3, .proj4, .proj5, .proj6 {
 	width: 100%;
@@ -731,12 +743,12 @@ nav a:hover + .line{
 }
 /* End */
 .emailinfo span, .phoneinfo span {
-    color: white;
+    color: var(--white);
 }
 .right-text h2 {
 	line-height: 1.2;
 	font-size: 22px;
-	color:#aaa;
+	color:var(--gray);
 	font-weight: normal;
 }
 .right-text {
@@ -802,7 +814,7 @@ nav a:hover + .line{
 }
 #footer-sec {
 	margin-top: 100px;
-	background-color: #2D6073;
+	background-color: var(--black);
 	color: white;
 }
 .flexfoot {
@@ -831,7 +843,7 @@ nav a:hover + .line{
     font-size: 14px;
 }
 .foot2 a:hover {
-    color: #F38C8F;
+    color: var(--gray);
     transition: 0.532s ease;
 
 }
@@ -1017,9 +1029,9 @@ nav a:hover + .line{
     width: 90%;
     height: 340px;
     padding: 20px;
-    background-color: #f7f7f7;
+    background-color: #fff;
     box-shadow: 0px 0px 10px #bebebe87, -5px -5px 10px #ffffff;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 /* Style the tab */
 .tab {
@@ -1034,7 +1046,7 @@ nav a:hover + .line{
   /* Style the buttons inside the tab */
   .tab button {
 	font-family: 'Manrope', sans-serif;
-	background-color: #f7f7f7;
+	background-color: var(--offwhite);
 	float: left;
 	border: none;
 	outline: none;
@@ -1045,20 +1057,20 @@ nav a:hover + .line{
 	padding: 10px 35px;
 	border:1px solid white;
 	transition: 0.324s ease;
-	border-radius:100px;
+	/* border-radius:100px; */
   }
   
   /* Change background color of buttons on hover */
   .tab button:hover {
 	transition: 0.324s ease;
-	background-color: var(--red);
+	background-color: var(--black);
 	color: white;
   }
   
   /* Create an active/current tablink class */
   .tab button.active {
 	transition: 0.324s ease;
-	background-color: var(--red);
+	background-color: var(--dark);
 	color: white;
   }
   
@@ -1087,7 +1099,7 @@ nav a:hover + .line{
 .vectorflex img {
 	max-width: 100%;
 	display: block;
-	border-radius: 10px;
+	/* border-radius: 10px; */
   }
   
   .vectorflex figure {
@@ -1140,7 +1152,7 @@ nav a:hover + .line{
 .clientflex img {
 	max-width: 100%;
 	display: block;
-	border-radius: 10px;
+	/* border-radius: 10px; */
   }
   
   .clientflex figure {
