@@ -7,6 +7,10 @@ img {
   --blue: #2D6073;
   --red: #F38C8F; 
   --offwhite: #f1f1f1;
+  --gray: #999;
+  --dark: #333; 
+  --black: #000;
+  --white: #fff;
 }
 html {
     scroll-behavior: smooth;
@@ -71,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px 40px;
 }
 header{
-	color: white;
+	color: var(--white);
  	min-height: 20px;
  	z-index: 1;
  	width: 100%;
@@ -90,15 +94,14 @@ header .menu-hide {
 header .menu-hide .menu {
 	font-size: 30px;
 	text-align: center;
-	color: #fff;
+	color: var(--white);
 	text-decoration: none;
 	text-transform: uppercase;
 }
 header .logo_1 {
 	width: 75px;
-	height: 75px;
+	height: auto;
 	margin: 0px;
-	padding: 0px;
 }
 header nav ul {
 	float: right;
@@ -113,7 +116,7 @@ header nav li {
 nav li a {
 	text-transform: uppercase;
 	text-decoration: none;
-	color: white;
+	color: var(--white);
 	padding: 50px 20px;
 	transition: .5s ease;
 }
@@ -131,7 +134,7 @@ header .finalmenu li {
 .finalmenu li a {
 	text-transform: uppercase;
 	text-decoration: none;
-	color: white;
+	color: var(--white);
 	padding: 50px 20px;
 	transition: .5s ease;
 }
@@ -139,7 +142,7 @@ hr {
 	opacity: 0;
 	width: 0%;
 	text-align:center;
-	border:1px solid #F38C8F;
+	border:1px solid var(--gray);
 	transition: 0.326s ease;
 }
 nav a:hover + .line{
@@ -149,26 +152,26 @@ nav a:hover + .line{
 }
 #head-nav li a {
 	font-size: 16px;
-    color: #2D6073;
+    color: var(--black);
     font-weight: bold;
     letter-spacing: 2px;
 	transition: 0.326s ease;
 }
 #head-nav li a:hover {
-    color: #F38C8F;
+    color: var(--gray);
 }
 #head-cta {
-	background-color: #F38C8F;
+	background-color: var(--black);
 	padding: 10px 20px;
-	border-radius: 100px;
-	color: white !important;
+	/* border-radius: 100px; */
+	color: var(--white) !important;
 	transition: 0.326s ease;
 }
 #head-cta:hover {
-	background-color: var(--blue);
+	background-color: var(--dark);
 	padding: 10px 20px;
-	border-radius: 100px;
-	color: white !important;
+	/* border-radius: 100px; */
+	color: var(--white) !important;
 	transition: 0.326s ease;
 
 }
@@ -179,12 +182,12 @@ nav a:hover + .line{
 }
 .main_header {
     min-height: 800px;
-    background-color: var(--offwhite);
-    width: 100%;
+    background: linear-gradient(0deg, #000000e3, #000000e3), url(../images/pexels-pixabay-270360\ \(1\).jpg);
+	width: 100%;
 }
 .content_header {
 	width: 40%;
-	color: black;
+	color: var(--white);
 	font-size: 25px;
 	line-height: 0.4;
 	min-height: 500px;
@@ -198,7 +201,7 @@ nav a:hover + .line{
 .sub-title {
 	padding-bottom:30px;
 	font-weight: bold;
-	color: #909090;
+	color: var(--gray);
 }
 .start {
 	font-size: 70px;
@@ -232,30 +235,30 @@ nav a:hover + .line{
 	width: 180px;
 	text-align: center;
 	padding: 25px 20px;
-	background-color: #F38C8F;
-	color: white;
+	background-color: var(--white);
+	color: var(--black);
 	text-decoration: none;
 	font-size: 18px;
 	transition: 0.32s ease;
 	text-transform: uppercase;
 	font-weight: 500;
 	letter-spacing: 1px;
-	border-radius: 100px;
+	/* border-radius: 100px; */
 	margin-right: 10px;
 }
 .btn-one:hover {
-	color:#fff;
+	color:var(--white);
 	transition: 0.32s ease;
-	background-color: #2D6073;
+	background-color: var(--dark);
 }
 .btn-two {
-	border-radius: 100px;
+	/* border-radius: 100px; */
 	width: 160px;
 	text-align: center;
 	padding: 25px 20px;
 	background-color: transparent;
-	color: #2D6073;
-	border: 2px solid #2D6073;
+	color: var(--white);
+	border: 2px solid var(--white);
 	text-decoration: none;
 	font-size: 18px;
 	transition: 0.32s ease;
@@ -266,7 +269,8 @@ nav a:hover + .line{
 .btn-two:hover {
 	color:#fff;
 	transition: 0.32s ease;
-	background-color: #2D6073;
+	background-color: var(--dark);
+	border: 2px solid var(--dark);
 }
 .content_hero {
 	width: 60%;
@@ -298,10 +302,10 @@ nav a:hover + .line{
 .gridicon {
 	position: absolute;
     margin-top: -70px;
-    background-color: #fff;
-    border-radius: 10px;
+    background-color: var(--offwhite);
+    /* border-radius: 10px; */
     z-index: 100;
-    box-shadow: 5px 5px 10px #bebebe87, -5px -5px 10px #ffffff;
+    /* box-shadow: 5px 5px 10px var(--black), -5px -5px 10px var(--dark); */
 }
 .main-icon {
 	display: flex;
@@ -713,7 +717,7 @@ nav a:hover + .line{
 	content: '';
 	position: absolute;
 	width: 200px;
-	background-image: linear-gradient(180deg, var(--blue), var(--red));
+	background-image: linear-gradient(180deg, var(--gray), var(--black));
 	height: 150%;
 	animation: rotBGimg 3s linear infinite;
 	transition: all 0.2s linear;
@@ -723,7 +727,7 @@ nav a:hover + .line{
     position: absolute;
     background: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/6c7622170183493.6459d53e27cb9.jpg) center bottom;
     inset: 10px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 /* End */
 .emailinfo span, .phoneinfo span {
