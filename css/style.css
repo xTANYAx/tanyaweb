@@ -1023,7 +1023,7 @@ nav a:hover + .line{
 	padding-top: 20px;
 }
 .webprojflex div h3 {
-	color: var(--blue);
+	color: var(--dark);
 }
 .webproj {
     width: 90%;
