@@ -1361,6 +1361,12 @@ nav a:hover + .line{
 }
 
 @media screen and (max-width: 480px) {
+	.tab button, .tab button.active {
+		border: none !important;
+	}
+	.project .Gridproj {
+		padding: 20px 0px 20px 0px;
+	}
 	.vectorflex {
 		column-count: 1;
 	}
@@ -1375,6 +1381,10 @@ nav a:hover + .line{
 	}
 	.main_header {
 		min-height: 670px;
+	}
+	header img {
+		padding-top: 0px;
+		float: left;
 	}
 	nav ul, nav ul:active ul {
 		display: none;
@@ -1520,6 +1530,7 @@ nav a:hover + .line{
 	}
 	.main_header {
 		background-color: white;
+		background: none;
 	}
 	.twogrid {
 		padding: 20px 0px; 
@@ -1560,6 +1571,32 @@ nav a:hover + .line{
 	.banner1 {
 		height: 250px;
 		margin-bottom: 20px;
+	}
+	.btn-banner {
+		background-color: var(--black);
+		color: var(--white);
+	}
+	.btn-banner:hover {
+		color:var(--white);
+		background-color: var(--dark);
+	}
+	.btn-one {
+		background-color: var(--black);
+		color: var(--white);
+	}
+	.btn-one:hover {
+		color:var(--white);
+		background-color: var(--dark);
+	}
+	.btn-two {
+		background-color: transparent;
+		color: var(--black);
+		border: 2px solid var(--black);
+	}
+	.btn-two:hover {
+		color:white;
+		background-color: var(--dark);
+		border: 2px solid var(--dark);
 	}
 }
 @media screen and (max-width: 375px) { 
